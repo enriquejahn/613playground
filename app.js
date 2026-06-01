@@ -18,6 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.addEventListener('click', () => dropdowns.forEach(dd => dd.classList.remove('open')));
 
+  // newsletter signup (placeholder until connected to an email tool)
+  document.querySelectorAll('.news-form').forEach(f => {
+    f.addEventListener('submit', e => {
+      e.preventDefault();
+      const email = f.querySelector('input[type="email"]');
+      if (!email || !email.value || !email.checkValidity()) { email && email.focus(); return; }
+      f.innerHTML = '<p class="news-msg">✓ Thanks! You\'re on the list.</p>';
+    });
+  });
+
   // scroll reveal
   const els = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {

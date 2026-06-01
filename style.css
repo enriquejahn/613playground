@@ -289,6 +289,20 @@ tbody tr:hover { background: var(--bg-3); }
 .rulebook .card ul li strong { color:var(--ink); }
 
 /* =========================================================
+   NEWSLETTER
+   ========================================================= */
+.grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.newsletter { border-top:1px solid var(--line); background: linear-gradient(180deg, var(--bg-2), transparent); padding: 44px 0; margin-top: 50px; }
+.news-inner { display:flex; align-items:center; justify-content:space-between; gap:26px; flex-wrap:wrap; }
+.news-copy h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+.news-copy p { color:var(--muted); margin-top:8px; max-width:46ch; }
+.news-form { display:flex; gap:10px; flex-wrap:wrap; }
+.news-form input { padding:13px 18px; border-radius:999px; border:1px solid var(--line); background:var(--bg); color:var(--ink); min-width:250px; font:inherit; }
+.news-form input:focus { outline:none; border-color:var(--accent); }
+.news-msg { color:var(--win); font-weight:800; font-size:1.05rem; }
+@media (max-width:760px){ .news-inner{ flex-direction:column; align-items:flex-start; } .news-form{ width:100%; } .news-form input{ flex:1; min-width:0; } }
+
+/* =========================================================
    FOOTER
    ========================================================= */
 .site-footer { border-top: 1px solid var(--line); margin-top: 50px; padding: 40px 0; color: var(--muted); }
