@@ -88,14 +88,32 @@
       <h2>Individual Player</h2>
       <p style="color:var(--muted)">Fall 2026 · Season 3</p>
       <div class="reg-price"><span class="amt">$TBD</span><span class="per">/ season</span></div>
-      <p style="color:var(--muted);font-size:.92rem">Secure your spot by filling out the registration form. We'll follow up with payment details and your team placement.</p>
-      <!-- Replace the href below with your Google Form link -->
-      <a class="btn big" href="https://forms.gle/REPLACE-WITH-YOUR-GOOGLE-FORM" target="_blank" rel="noopener" style="margin-top:18px">Register Now →</a>
-      <p style="color:var(--muted);font-size:.78rem;margin-top:12px;text-align:center">Opens the registration form in a new tab.</p>
+      <p style="color:var(--muted);font-size:.92rem">Fill out the form and we'll follow up with payment details and your team placement.</p>
+      <form class="reg-form" action="https://formsubmit.co/info@613playground.com" method="POST" style="margin-top:16px">
+        <input type="hidden" name="_subject" value="New Fall 2026 Registration — 613 Playground">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for registering for the 613 Playground Fall 2026 season! We've got your info and we'll be in touch soon with payment details and your team placement. In the meantime, follow @613playground on Instagram, TikTok and YouTube for updates. See you on the court! — 613 Playground">
+        <input type="text" name="_honey" style="display:none">
+        <input type="text" name="Full Name" placeholder="Full name" required>
+        <input type="email" name="Email" placeholder="you@email.com" required>
+        <input type="tel" name="Phone Number" placeholder="Phone number" required>
+        <select name="How did you hear about us?" required>
+          <option value="" disabled selected>How did you hear about us?</option>
+          <option>Instagram</option>
+          <option>TikTok</option>
+          <option>YouTube</option>
+          <option>Word of mouth / a friend</option>
+          <option>Played last season</option>
+          <option>Other</option>
+        </select>
+        <button type="submit" class="btn big" style="margin-top:4px">Register Now →</button>
+      </form>
+      <p style="color:var(--muted);font-size:.78rem;margin-top:12px;text-align:center">We'll reply from info@613playground.com.</p>
     </div>
   </div>
 
-  <div class="note"><strong>Set this up:</strong> Create your Google Form, then replace the link <code>https://forms.gle/REPLACE-WITH-YOUR-GOOGLE-FORM</code> in this page's "Register Now" button with your real form URL. Also swap <code>$TBD</code> for the season fee once set.</div>
+  <div class="note"><strong>One-time setup:</strong> The first time someone registers, FormSubmit emails <code>info@613playground.com</code> a confirmation link — click it once and registrations start flowing to that inbox. Swap <code>$TBD</code> for the season fee when it's set.</div>
 </section>
 
 <!-- ===== HOW IT WORKS ===== -->
