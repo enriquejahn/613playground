@@ -409,3 +409,7 @@ tbody tr:hover { background: var(--bg-3); }
 .roll-item .who span { display:block; color:var(--muted); font-size:.82rem; font-weight:400; }
 .roll-item .tro { margin-left:auto; font-size:1.4rem; }
 .roll-item.pending { opacity:.7; border-style:dashed; }
+
+/* about page photo + roster team photos */
+.about-photo { width:min(420px, 72vw); margin:0 auto 22px; display:block; border-radius:18px; border:1px solid var(--line); box-shadow:var(--shadow); }
+.team-photo { width:100%; height:auto; display:block; border-top:1px solid var(--line); }
