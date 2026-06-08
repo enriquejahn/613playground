@@ -28,6 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // lightbox for headshots & team photos
+  const zoomables = document.querySelectorAll('.zoomable');
+  if (zoomables.length) {
+    const lb = document.createElement('div');
+    lb.className = 'lightbox';
+    const lbImg = document.createElement('img');
+    lb.appendChild(lbImg);
+    document.body.appendChild(lb);
+    const closeLb = () => lb.classList.remove('open');
+    zoomables.forEach(img => img.addEventListener('click', () => {
+      lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = img.currentSrc || img.src; };
+      lbImg.src = img.dataset.full || img.currentSrc || img.src;
+      lb.classList.add('open');
+    }));
+    lb.addEventListener('click', closeLb);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+  }
+
   // scroll reveal
   const els = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
