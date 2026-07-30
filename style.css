@@ -437,3 +437,8 @@ tbody tr:hover { background: var(--bg-3); }
 
 .watch-btn.disabled { background:#2a2a33; color:var(--muted); cursor:default; }
 .watch-btn.disabled:hover { transform:none; filter:none; }
+
+/* in-game gallery tiles */
+.gallery.ingame { grid-template-columns: repeat(auto-fill, minmax(155px,1fr)); }
+.gallery.ingame .g-item { border-top:none; }
+.gallery.ingame .g-item img { aspect-ratio:4/3; }
