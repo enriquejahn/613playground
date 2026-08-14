@@ -442,3 +442,17 @@ tbody tr:hover { background: var(--bg-3); }
 .gallery.ingame { grid-template-columns: repeat(auto-fill, minmax(155px,1fr)); }
 .gallery.ingame .g-item { border-top:none; }
 .gallery.ingame .g-item img { aspect-ratio:4/3; }
+
+/* Season 3 promo banner (home) */
+.s3-promo { padding-top: 30px; }
+.s3-banner { display:flex; align-items:center; justify-content:space-between; gap:26px; flex-wrap:wrap;
+  background:linear-gradient(120deg, var(--accent), var(--accent-2)); border-radius:22px; padding:30px 34px; box-shadow:var(--shadow); }
+.s3-banner .s3-copy { flex:1 1 380px; }
+.s3-badge { display:inline-block; background:rgba(11,11,13,.88); color:#fff; font-size:.72rem; font-weight:800;
+  letter-spacing:1.6px; text-transform:uppercase; padding:6px 13px; border-radius:999px; }
+.s3-banner h2 { color:#0b0b0d; font-size:2rem; line-height:1.1; margin:12px 0 8px; }
+.s3-banner .s3-hl { color:#fff; }
+.s3-banner p { color:rgba(11,11,13,.82); margin:0; max-width:540px; font-weight:500; }
+.s3-btn { background:#0b0b0d !important; color:#fff !important; white-space:nowrap; border:none; }
+.s3-btn:hover { transform:translateY(-2px); filter:brightness(1.15); }
+@media (max-width:640px){ .s3-banner { padding:24px 22px; } .s3-banner h2 { font-size:1.6rem; } }
