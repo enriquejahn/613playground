@@ -456,3 +456,19 @@ tbody tr:hover { background: var(--bg-3); }
 .s3-btn { background:#0b0b0d !important; color:#fff !important; white-space:nowrap; border:none; }
 .s3-btn:hover { transform:translateY(-2px); filter:brightness(1.15); }
 @media (max-width:640px){ .s3-banner { padding:24px 22px; } .s3-banner h2 { font-size:1.6rem; } }
+
+/* playoff bracket */
+.bracket { display:flex; gap:34px; align-items:center; overflow-x:auto; padding:6px 0 6px; }
+.bracket-col { display:flex; flex-direction:column; gap:24px; min-width:250px; }
+.bracket-final { justify-content:center; }
+.bk-round { font-size:.72rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); font-weight:800; }
+.bk-match { background:var(--bg-2); border:1px solid var(--line); border-left:4px solid var(--tc,var(--accent)); border-radius:12px; overflow:hidden; }
+.bk-label { font-size:.68rem; letter-spacing:1px; text-transform:uppercase; color:var(--muted); font-weight:700; padding:8px 14px 2px; }
+.bk-team { display:flex; align-items:center; gap:10px; padding:11px 14px; font-weight:700; }
+.bk-team + .bk-team { border-top:1px solid var(--line); }
+.bk-team img { width:26px; height:26px; object-fit:contain; }
+.bk-team .seed { font-size:.72rem; color:var(--muted); width:14px; text-align:center; }
+.bk-team.tbd { color:var(--muted); font-weight:600; }
+.final-match { border-left-color:var(--accent-2); }
+.bk-champ { margin-top:6px; text-align:center; background:linear-gradient(120deg,var(--accent),var(--accent-2)); color:#0b0b0d; border-radius:12px; padding:14px; font-weight:800; letter-spacing:1px; }
+.bk-champ .champ-tbd { font-size:1.15rem; margin-top:2px; }
