@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Standings — 613 Playground Basketball League | Season 2</title>
-<meta name="description" content="Season 2 standings for the 613 Playground Basketball League in Ottawa — wins, losses and point differential for all four teams.">
+<title>Standings — 613 Playground Basketball League | Season 3</title>
+<meta name="description" content="Season 3 standings for the 613 Playground Basketball League in Ottawa — wins, losses and point differential for all four teams.">
 <link rel="icon" href="assets/league.png">
 <link rel="canonical" href="https://613playground.com/standings.html">
 <meta name="robots" content="index, follow">
@@ -12,12 +12,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="613 Playground Basketball League">
 <meta property="og:title" content="Standings — 613 Playground">
-<meta property="og:description" content="Season 2 standings — wins, losses and point differential for all four teams.">
+<meta property="og:description" content="Season 3 standings — wins, losses and point differential for all four teams.">
 <meta property="og:url" content="https://613playground.com/standings.html">
 <meta property="og:image" content="https://613playground.com/assets/og-share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Standings — 613 Playground">
-<meta name="twitter:description" content="Season 2 standings — wins, losses and point differential for all four teams.">
+<meta name="twitter:description" content="Season 3 standings — wins, losses and point differential for all four teams.">
 <meta name="twitter:image" content="https://613playground.com/assets/og-share.jpg">
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BVWBQHX8G"></script>
@@ -35,19 +35,28 @@
   <div class="container nav">
     <a class="brand" href="index.html">
       <img class="logo" src="assets/league.png" alt="613 Playground logo">
-      <span class="brand-text"><span class="name">613 Playground</span><span class="sub">Season 2</span></span>
+      <span class="brand-text"><span class="name">613 Playground</span><span class="sub">Season 3</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <nav id="menu" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <div class="dropdown">
-        <button class="dropbtn active" type="button">Season 2 <span class="caret">▾</span></button>
+        <button class="dropbtn active" type="button">Season 3 <span class="caret">▾</span></button>
         <div class="dropdown-menu">
           <a href="schedule.html">Schedule</a>
           <a href="scores.html">Scores</a>
           <a href="standings.html" class="active">Standings</a>
           <a href="rosters.html">Rosters</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" type="button">Season 2 <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="season2-schedule.html">Schedule</a>
+          <a href="season2-scores.html">Scores</a>
+          <a href="season2-standings.html">Standings</a>
+          <a href="season2-rosters.html">Rosters</a>
         </div>
       </div>
       <a href="highlights.html">Highlights</a>
@@ -56,62 +65,30 @@
       <a href="rules.html">Rules</a>
       <a href="open-runs.html">Open Runs</a>
       <a href="merch.html">Merch</a>
-      <a href="register.html" class="cta">Register</a>
     </nav>
   </div>
 </header>
 
 <div class="container page-head">
-  <span class="eyebrow">Season 2</span>
+  <span class="eyebrow">Season 3</span>
   <h1>League <span class="grad">Standings</span></h1>
   <p>Where every team sits this season. Ranked by points — a win is worth 1 and a tie 0.5 — with point differential breaking any ties.</p>
 </div>
-
-<!-- ===== PLAYOFF BRACKET ===== -->
-<section class="container reveal">
-  <h2 class="section-title">Playoff Bracket</h2>
-  <p style="color:var(--muted);max-width:680px;margin:-4px 0 20px">It's a wrap — the <strong style="color:var(--ink)">Bulls are your Season 2 champions</strong>, taking down the Cavs 58–53 in the final. Blacklipinos claimed 3rd place.</p>
-  <div class="bracket">
-    <div class="bracket-col">
-      <div class="bk-round">Semi-Finals · Aug 20</div>
-      <div class="bk-match" style="--tc:var(--t-cavs)">
-        <div class="bk-label">SF1 · 8:30 PM</div>
-        <div class="bk-team win"><span class="seed">1</span><img src="assets/cavs.png" alt="">Cavs<span class="bk-score">62</span></div>
-        <div class="bk-team"><span class="seed">4</span><img src="assets/blue-lions.png" alt="">Blue Lions<span class="bk-score">61</span></div>
-      </div>
-      <div class="bk-match" style="--tc:var(--t-bulls)">
-        <div class="bk-label">SF2 · 9:45 PM</div>
-        <div class="bk-team"><span class="seed">2</span><img src="assets/blacklipinos.png" alt="">Blacklipinos<span class="bk-score">28</span></div>
-        <div class="bk-team win"><span class="seed">3</span><img src="assets/bulls.jpg" alt="">Bulls<span class="bk-score">29</span></div>
-      </div>
-    </div>
-    <div class="bracket-col bracket-final">
-      <div class="bk-round">Championship · Aug 27</div>
-      <div class="bk-match final-match">
-        <div class="bk-label">🏆 Final · 9:45 PM</div>
-        <div class="bk-team"><img src="assets/cavs.png" alt="">Cavs<span class="bk-score">53</span></div>
-        <div class="bk-team win"><img src="assets/bulls.jpg" alt="">Bulls<span class="bk-score">58</span></div>
-      </div>
-      <div class="bk-champ"><span>🏆 Champion</span><div class="champ-tbd"><img src="assets/bulls.jpg" alt="" style="width:26px;height:26px;vertical-align:-6px;margin-right:6px">Bulls</div></div>
-    </div>
-  </div>
-  <p style="color:var(--muted);font-size:.82rem;margin-top:14px">3rd-place game: Blue Lions vs Blacklipinos, Aug 27 at 8:30 PM.</p>
-</section>
 
 <section class="container">
   <div class="table-wrap reveal">
     <table>
       <thead><tr><th>#</th><th>Team</th><th>W</th><th>L</th><th>T</th><th>Pts</th><th>PF</th><th>PA</th><th>Diff</th></tr></thead>
       <tbody>
-        <tr><td class="rank">1</td><td><span class="team-cell"><img src="assets/cavs.png" alt="">Cavs</span></td><td>6</td><td>2</td><td>3</td><td><strong>7.5</strong></td><td>615</td><td>572</td><td>+43</td></tr>
-        <tr><td class="rank">2</td><td><span class="team-cell"><img src="assets/blacklipinos.png" alt="">Blacklipinos</span></td><td>6</td><td>4</td><td>1</td><td><strong>6.5</strong></td><td>538</td><td>543</td><td>−5</td></tr>
-        <tr><td class="rank">3</td><td><span class="team-cell"><img src="assets/bulls.jpg" alt="">Bulls</span></td><td>5</td><td>5</td><td>1</td><td><strong>5.5</strong></td><td>546</td><td>556</td><td>−10</td></tr>
-        <tr><td class="rank">4</td><td><span class="team-cell"><img src="assets/blue-lions.png" alt="">Blue Lions</span></td><td>1</td><td>7</td><td>3</td><td><strong>2.5</strong></td><td>596</td><td>624</td><td>−28</td></tr>
+        <tr><td class="rank">—</td><td><span class="team-cell"><img src="assets/wolves.png" alt="">Wolves</span></td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td class="rank">—</td><td><span class="team-cell"><img src="assets/spurs.png" alt="">Spurs</span></td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td class="rank">—</td><td><span class="team-cell"><img src="assets/hoop.png" alt="">Hoop There It Is</span></td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td class="rank">—</td><td><span class="team-cell"><img src="assets/headlines.png" alt="">Headlines</span></td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td><td>0</td><td>0</td><td>0</td></tr>
       </tbody>
     </table>
   </div>
   <p style="color:var(--muted);font-size:.82rem;margin-top:12px">W = Wins · L = Losses · T = Ties · Pts = League Points (win = 1, tie = 0.5) · PF = Points For · PA = Points Against · Diff = Point Differential. Teams level on points are separated by point differential.</p>
-  <div class="note"><strong>Live:</strong> Standings update after every game night. See <a href="scores.html" style="color:var(--accent-2)">Scores</a> for game results.</div>
+  <div class="note"><strong>Season 3 starts Sept 18.</strong> Standings update after every game night — the table fills in once opening night is done. Playoffs begin Nov 27; see the <a href="schedule.html" style="color:var(--accent-2)">schedule</a>.</div>
 </section>
 
 <!-- ===== NEWSLETTER =====
@@ -132,8 +109,8 @@
 
 <footer class="site-footer">
   <div class="container row">
-    <div class="brand"><img class="logo" src="assets/league.png" alt="" style="width:42px;height:42px"><span class="brand-text"><span class="name">613 Playground</span><span class="sub">Season 2</span></span></div>
-    <div><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="schedule.html">Schedule</a> · <a href="scores.html">Scores</a> · Standings · <a href="rosters.html">Rosters</a> · <a href="highlights.html">Highlights</a> · <a href="gallery.html">Gallery</a> · <a href="champions.html">Champions</a> · <a href="rules.html">Rules</a> · <a href="open-runs.html">Open Runs</a> · <a href="merch.html">Merch</a> · <a href="register.html">Register</a></div>
+    <div class="brand"><img class="logo" src="assets/league.png" alt="" style="width:42px;height:42px"><span class="brand-text"><span class="name">613 Playground</span><span class="sub">Season 3</span></span></div>
+    <div><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="schedule.html">Schedule</a> · <a href="scores.html">Scores</a> · Standings · <a href="rosters.html">Rosters</a> · <a href="highlights.html">Highlights</a> · <a href="gallery.html">Gallery</a> · <a href="champions.html">Champions</a> · <a href="rules.html">Rules</a> · <a href="open-runs.html">Open Runs</a> · <a href="merch.html">Merch</a> · <a href="season2-standings.html">Season 2 Archive</a></div>
     <div class="foot-social">
       <a href="https://www.youtube.com/@613playgrounds" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
       <a href="https://www.instagram.com/613playground/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>

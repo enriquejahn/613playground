@@ -23,6 +23,10 @@
   --t-blacks:  #e8c95a;
   --t-cavs:    #c8862b;
   --t-bulls:   #e23b30;
+  --t-wolves:    #2f9e5e;
+  --t-spurs:     #9aa3ad;
+  --t-hoop:      #6a3fb0;
+  --t-headlines: #2159c9;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -487,3 +491,5 @@ tbody tr:hover { background: var(--bg-3); }
 .hc-badge { display:inline-block; background:var(--accent-2); color:#0b0b0d; font-size:.74rem; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; padding:6px 13px; border-radius:999px; }
 .hc-copy h2 { font-size:2.1rem; line-height:1.1; margin:2px 0; }
 .hc-copy p { color:var(--muted); margin:0; max-width:520px; }
+
+.roster-list .badge-cc { margin-left:auto; font-size:.62rem; letter-spacing:1px; background:transparent; border:1px solid var(--tc); color:var(--tc); padding:1px 7px; border-radius:5px; font-weight:800; }
