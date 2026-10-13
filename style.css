@@ -495,3 +495,20 @@ tbody tr:hover { background: var(--bg-3); }
 .roster-list .badge-cc { margin-left:auto; font-size:.62rem; letter-spacing:1px; background:transparent; border:1px solid var(--tc); color:var(--tc); padding:1px 7px; border-radius:5px; font-weight:800; }
 
 .dropdown-menu .dd-label { padding:9px 12px 4px; margin-top:4px; border-top:1px solid var(--line); font-size:.66rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); font-weight:800; }
+
+/* ===== SPLASH (sport picker) ===== */
+.splash-body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1100px 650px at 50% -12%, rgba(255,106,26,.10), transparent 60%), radial-gradient(800px 600px at 50% 120%, rgba(245,179,1,.07), transparent 55%), var(--bg);}
+.splash{text-align:center;padding:44px 20px;width:min(780px,94vw)}
+.splash-logo{width:94px;height:94px;border-radius:50%;margin:0 auto 14px;display:block;object-fit:cover}
+.splash h1{font-size:clamp(2.2rem,6vw,3.2rem)}
+.splash h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.splash-sub{color:var(--accent-2);letter-spacing:5px;text-transform:uppercase;font-size:.78rem;margin:6px 0 40px}
+.splash-tiles{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+.splash-tile{flex:1 1 300px;max-width:340px;background:linear-gradient(180deg,#141418,#0e0e11);border:1px solid var(--line);border-radius:22px;padding:34px 26px;display:flex;flex-direction:column;align-items:center;transition:.2s;color:var(--ink)}
+.splash-tile:hover{border-color:var(--accent-2);transform:translateY(-5px);box-shadow:var(--shadow)}
+.splash-tile img{width:120px;height:120px;filter:drop-shadow(0 8px 20px rgba(227,178,62,.25))}
+.splash-tile h2{font-size:1.7rem;margin:18px 0 6px}
+.splash-tile p{color:var(--muted);font-size:.92rem;min-height:44px;max-width:240px}
+.splash-tile .go{margin-top:14px;background:linear-gradient(90deg,var(--accent-2),#f1cd6e);color:#111;font-weight:800;padding:11px 26px;border-radius:999px;font-size:.9rem}
+.splash-foot{margin-top:34px;color:var(--muted);font-size:.82rem;letter-spacing:1px}
+.splash-foot a{color:var(--muted)}.splash-foot a:hover{color:var(--accent-2)}
