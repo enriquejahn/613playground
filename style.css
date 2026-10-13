@@ -512,3 +512,7 @@ tbody tr:hover { background: var(--bg-3); }
 .splash-tile .go{margin-top:14px;background:linear-gradient(90deg,var(--accent-2),#f1cd6e);color:#111;font-weight:800;padding:11px 26px;border-radius:999px;font-size:.9rem}
 .splash-foot{margin-top:34px;color:var(--muted);font-size:.82rem;letter-spacing:1px}
 .splash-foot a{color:var(--muted)}.splash-foot a:hover{color:var(--accent-2)}
+
+.nav-links a.all-sports{ font-size:.82rem; color:var(--accent-2); font-weight:700; }
+.nav-links a.all-sports:hover{ color:#111; background:var(--accent-2); }
+@media (max-width:880px){ .nav-links a.all-sports{ font-size:.95rem; } }
