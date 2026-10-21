@@ -22,4 +22,8 @@
   <url><loc>https://613playground.com/season2-standings.html</loc><priority>0.3</priority></url>
   <url><loc>https://613playground.com/season2-rosters.html</loc><priority>0.3</priority></url>
   <url><loc>https://613playground.com/contact.html</loc><priority>0.6</priority></url>
+  <url><loc>https://613playground.com/contact-volleyball.html</loc><priority>0.5</priority></url>
+  <url><loc>https://613playground.com/contact-junior.html</loc><priority>0.5</priority></url>
+  <url><loc>https://613playground.com/junior-about.html</loc><priority>0.6</priority></url>
+  <url><loc>https://613playground.com/junior-programs.html</loc><priority>0.6</priority></url>
 </urlset>
