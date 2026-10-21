@@ -498,7 +498,7 @@ tbody tr:hover { background: var(--bg-3); }
 
 /* ===== SPLASH (sport picker) ===== */
 .splash-body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1100px 650px at 50% -12%, rgba(255,106,26,.10), transparent 60%), radial-gradient(800px 600px at 50% 120%, rgba(245,179,1,.07), transparent 55%), var(--bg);}
-.splash{text-align:center;padding:44px 20px;width:min(780px,94vw)}
+.splash{text-align:center;padding:44px 20px;width:min(1040px,94vw)}
 .splash-logo{width:94px;height:94px;border-radius:50%;margin:0 auto 14px;display:block;object-fit:cover}
 .splash h1{font-size:clamp(2.2rem,6vw,3.2rem)}
 .splash h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -516,3 +516,25 @@ tbody tr:hover { background: var(--bg-3); }
 .nav-links a.all-sports{ font-size:.82rem; color:var(--accent-2); font-weight:700; }
 .nav-links a.all-sports:hover{ color:#111; background:var(--accent-2); }
 @media (max-width:880px){ .nav-links a.all-sports{ font-size:.95rem; } }
+
+.reg-form textarea{ width:100%; padding:12px 14px; background:var(--bg-2); border:1px solid var(--line); border-radius:12px; color:var(--ink); font:inherit; resize:vertical; }
+
+/* ===== LIGHT THEME (Junior) ===== */
+body.light-theme{
+  --bg:#ffffff; --bg-2:#f5f7fa; --bg-3:#e8edf3;
+  --ink:#171922; --muted:#5b6170; --line:#e5e9ef;
+  --shadow:0 16px 40px rgba(24,28,48,.10);
+  background:
+    radial-gradient(900px 520px at 50% -10%, rgba(255,106,26,.07), transparent 60%),
+    radial-gradient(700px 500px at 100% 115%, rgba(245,179,1,.07), transparent 55%),
+    #ffffff;
+  color:var(--ink);
+}
+.light-theme .site-header{ background:rgba(255,255,255,.9); border-bottom:1px solid var(--line); }
+.light-theme .brand-text .name{ color:var(--ink); }
+.light-theme .eyebrow{ color:#b9790c; }
+.light-theme .note strong{ color:#b9790c; }
+.light-theme .venue .v-when .day{ color:#b9790c; }
+.light-theme .nav-links a.all-sports{ color:#b9790c; }
+.light-theme .nav-links a.all-sports:hover{ color:#fff; background:var(--accent-2); }
+.light-theme .card{ box-shadow:0 10px 28px rgba(24,28,48,.07); }
