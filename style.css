@@ -498,7 +498,7 @@ tbody tr:hover { background: var(--bg-3); }
 
 /* ===== SPLASH (sport picker) ===== */
 .splash-body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1100px 650px at 50% -12%, rgba(255,106,26,.10), transparent 60%), radial-gradient(800px 600px at 50% 120%, rgba(245,179,1,.07), transparent 55%), var(--bg);}
-.splash{text-align:center;padding:44px 20px;width:min(1040px,94vw)}
+.splash{text-align:center;padding:44px 20px;width:min(780px,94vw)}
 .splash-logo{width:94px;height:94px;border-radius:50%;margin:0 auto 14px;display:block;object-fit:cover}
 .splash h1{font-size:clamp(2.2rem,6vw,3.2rem)}
 .splash h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
