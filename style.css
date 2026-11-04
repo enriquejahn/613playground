@@ -551,7 +551,7 @@ body.light-theme{
 .jr-lead{ max-width:620px; color:#eef0f4; font-size:1.1rem; margin:14px 0 22px; }
 
 /* sign-up (captain / join a team) buttons */
-.signup-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.signup-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; max-width:760px; margin:0 auto; }
 @media (max-width:720px){ .signup-grid{ grid-template-columns:1fr; } }
 .signup-card{ display:block; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); transition:transform .2s, border-color .2s; }
 .signup-card:hover{ transform:translateY(-6px); border-color:var(--accent-2); }
