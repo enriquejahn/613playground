@@ -556,3 +556,7 @@ body.light-theme{
 .signup-card{ display:block; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); transition:transform .2s, border-color .2s; }
 .signup-card:hover{ transform:translateY(-6px); border-color:var(--accent-2); }
 .signup-card img{ width:100%; height:auto; display:block; }
+
+.signup-card{ display:flex; flex-direction:column; }
+.signup-cta{ background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#111; font-family:'Anton',sans-serif; text-transform:uppercase; letter-spacing:1px; font-size:1.3rem; text-align:center; padding:14px 10px; display:flex; align-items:center; justify-content:center; gap:8px; transition:filter .2s; }
+.signup-card:hover .signup-cta{ filter:brightness(1.08); }
