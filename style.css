@@ -549,3 +549,10 @@ body.light-theme{
 .jr-hero-inner h1{ color:#fff; font-size:clamp(2.4rem,7vw,4rem); text-shadow:0 4px 24px rgba(0,0,0,.45); }
 .jr-hero-logo{ width:62px; height:62px; margin-bottom:10px; display:block; filter:drop-shadow(0 6px 16px rgba(0,0,0,.5)); }
 .jr-lead{ max-width:620px; color:#eef0f4; font-size:1.1rem; margin:14px 0 22px; }
+
+/* sign-up (captain / join a team) buttons */
+.signup-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+@media (max-width:720px){ .signup-grid{ grid-template-columns:1fr; } }
+.signup-card{ display:block; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); transition:transform .2s, border-color .2s; }
+.signup-card:hover{ transform:translateY(-6px); border-color:var(--accent-2); }
+.signup-card img{ width:100%; height:auto; display:block; }
