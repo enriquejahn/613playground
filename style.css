@@ -11,8 +11,8 @@
   --bg-3:      #1c1c26;   /* hover / borders        */
   --ink:       #f6f6f8;   /* main text              */
   --muted:     #9a9aa8;   /* secondary text         */
-  --accent:    #ff6a1a;   /* league orange          */
-  --accent-2:  #f5b301;   /* league gold            */
+  --accent:    #e89f04;   /* league gold (deep)     */
+  --accent-2:  #f9b81a;   /* league gold (bright)   */
   --line:      #26262f;   /* hairlines              */
   --win:       #36d399;   /* winning score green    */
   --radius:    18px;
@@ -21,11 +21,6 @@
   /* type system */
   --font-display: 'Bebas Neue', 'Anton', Impact, sans-serif;
   --font-body:    'Montserrat', system-ui, -apple-system, sans-serif;
-
-  /* Season 4 "Different Breed" accents (navy/gold graphics) */
-  --s4-navy:  #0c2c59;   /* deep navy from the artwork */
-  --s4-blue:  #3b7bff;   /* royal accent that reads on dark */
-  --s4-ice:   #6aa6ff;   /* icy winter-league highlight  */
 
   /* team colors */
   --t-lions:   #2b6dff;
@@ -46,7 +41,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   background:
-    radial-gradient(900px 600px at 100% -5%, rgba(255,106,26,.10), transparent 60%),
+    radial-gradient(900px 600px at 100% -5%, rgba(230,165,30,.10), transparent 60%),
     radial-gradient(800px 600px at -10% 110%, rgba(245,179,1,.07), transparent 55%),
     var(--bg);
   color: var(--ink);
@@ -87,6 +82,8 @@ a { color: inherit; text-decoration: none; }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand .logo { width: 48px; height: 48px; border-radius: 10px; object-fit: cover; }
+.brand-logo { height: 46px; width: auto; display: block; }
+@media (max-width: 880px){ .brand-logo { height: 38px; } }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-text .name { font-family:var(--font-display); font-size: 1.28rem; letter-spacing:1px; }
 .brand-text .sub  { font-size: .66rem; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-top:3px; }
@@ -141,8 +138,8 @@ a { color: inherit; text-decoration: none; }
 .hero-overlay { position:absolute; inset:0; z-index:1;
   background:
     linear-gradient(180deg, rgba(8,8,11,.58) 0%, rgba(8,8,11,.32) 32%, rgba(8,8,11,.86) 76%, rgba(8,8,11,.98) 100%),
-    radial-gradient(900px 540px at 14% 6%, rgba(59,123,255,.20), transparent 60%),
-    radial-gradient(1100px 620px at 50% 120%, rgba(255,106,26,.15), transparent 62%),
+    radial-gradient(900px 540px at 14% 6%, rgba(230,165,30,.16), transparent 60%),
+    radial-gradient(1100px 620px at 50% 120%, rgba(230,165,30,.15), transparent 62%),
     radial-gradient(120% 120% at 50% 50%, transparent 55%, rgba(0,0,0,.45) 100%),
     rgba(0,0,0,.18); }
 .hero .container { position: relative; z-index: 2; text-align:center; padding: 72px 0 72px; }
@@ -157,13 +154,10 @@ a { color: inherit; text-decoration: none; }
 .hero-cta { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; justify-content:center; }
 .hero .stat-strip { justify-content:center; }
 /* Season 4 blue touches — icy "Winter League" eyebrow + cool accent on hero stats */
-.hero .eyebrow { color: var(--s4-ice); }
-.hero .stat { border-top: 2px solid rgba(59,123,255,.55); }
-.hero .stat:nth-child(3) .n { background: linear-gradient(var(--s4-blue), var(--s4-ice));
-  -webkit-background-clip:text; background-clip:text; color:transparent; }
+.hero .stat { border-top: 2px solid rgba(230,165,30,.45); }
 
 .btn { display:inline-flex; align-items:center; gap:8px; padding: 13px 26px; border-radius: 999px; font-weight: 800; background: var(--accent); color: #111; border: 2px solid var(--accent); transition: .18s; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,106,26,.35); }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(230,165,30,.35); }
 .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn.ghost:hover { border-color: var(--accent); }
 
@@ -171,7 +165,7 @@ a { color: inherit; text-decoration: none; }
    GENERIC
    ========================================================= */
 .page-head { padding: clamp(54px, 7.5vw, 92px) 0 clamp(24px, 3.5vw, 36px); position:relative;
-  background: radial-gradient(880px 420px at 12% -25%, rgba(255,106,26,.13), transparent 62%); }
+  background: radial-gradient(880px 420px at 12% -25%, rgba(230,165,30,.13), transparent 62%); }
 .page-head .eyebrow { margin-bottom: 12px; letter-spacing: 4.5px; }
 .page-head h1 { font-size: clamp(2.8rem, 7.5vw, 5.2rem); line-height: .94; }
 .page-head h1 .grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color: transparent; }
@@ -182,9 +176,9 @@ a { color: inherit; text-decoration: none; }
 
 /* about page */
 .about-hero { text-align:center; padding: clamp(56px, 8vw, 100px) 0 clamp(18px,3vw,28px); position:relative;
-  background: radial-gradient(820px 420px at 50% -12%, rgba(255,106,26,.15), transparent 60%); }
+  background: radial-gradient(820px 420px at 50% -12%, rgba(230,165,30,.15), transparent 60%); }
 .about-logo { width: clamp(200px, 36vw, 320px); margin: 0 auto 18px; display:block;
-  filter: drop-shadow(0 20px 50px rgba(255,106,26,.30)); }
+  filter: drop-shadow(0 20px 50px rgba(230,165,30,.30)); }
 .about-hero .eyebrow { color: var(--accent-2); letter-spacing: 4.5px; }
 .about-hero h1 { font-size: clamp(2.8rem, 7.5vw, 5.2rem); line-height: .94; }
 .about-hero .lead { max-width: 660px; margin: 18px auto 0; color: var(--muted); font-size: 1.15rem; }
@@ -486,7 +480,7 @@ tbody tr:hover { background: var(--bg-3); }
 .s3-banner .s3-copy { flex:1 1 380px; }
 .s3-badge { display:inline-block; background:rgba(11,11,13,.88); color:#fff; font-size:.72rem; font-weight:800;
   letter-spacing:1.6px; text-transform:uppercase; padding:6px 13px; border-radius:999px; }
-.s3-badge.s4 { background:var(--s4-navy); box-shadow:inset 0 0 0 1px rgba(106,166,255,.45); }
+.s3-badge.s4 { background:#0b0b0d; box-shadow:inset 0 0 0 1px rgba(246,203,70,.45); }
 .s3-banner h2 { color:#0b0b0d; font-size:2rem; line-height:1.1; margin:12px 0 8px; }
 .s3-banner .s3-hl { color:#fff; }
 .s3-banner p { color:rgba(11,11,13,.82); margin:0; max-width:540px; font-weight:500; }
@@ -530,15 +524,16 @@ tbody tr:hover { background: var(--bg-3); }
 .dropdown-menu .dd-label { padding:9px 12px 4px; margin-top:4px; border-top:1px solid var(--line); font-size:.66rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); font-weight:800; }
 
 /* ===== SPLASH (sport picker) ===== */
-.splash-body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1100px 650px at 50% -12%, rgba(255,106,26,.10), transparent 60%), radial-gradient(800px 600px at 50% 120%, rgba(245,179,1,.07), transparent 55%), var(--bg);}
+.splash-body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(1100px 650px at 50% -12%, rgba(230,165,30,.10), transparent 60%), radial-gradient(800px 600px at 50% 120%, rgba(245,179,1,.07), transparent 55%), var(--bg);}
 .splash{text-align:center;padding:44px 20px;width:min(1040px,94vw)}
-.splash-logo{width:94px;height:94px;border-radius:50%;margin:0 auto 14px;display:block;object-fit:cover}
+.splash-logo{width:min(540px,82vw);height:auto;margin:0 auto 10px;display:block;object-fit:contain;filter:drop-shadow(0 16px 40px rgba(0,0,0,.6))}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .splash h1{font-size:clamp(2.2rem,6vw,3.2rem)}
 .splash h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .splash-sub{color:var(--accent-2);letter-spacing:5px;text-transform:uppercase;font-size:.78rem;margin:6px 0 40px}
 .splash-s4{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;max-width:860px;margin:0 auto 38px;padding:16px 26px;border-radius:18px;background:linear-gradient(120deg,var(--accent),var(--accent-2));color:#0b0b0d;box-shadow:var(--shadow);transition:.2s}
 .splash-s4:hover{transform:translateY(-3px);filter:brightness(1.05)}
-.splash-s4 .tag{background:var(--s4-navy);color:#fff;font-size:.64rem;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap;box-shadow:inset 0 0 0 1px rgba(106,166,255,.5)}
+.splash-s4 .tag{background:#0b0b0d;color:#fff;font-size:.64rem;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap;box-shadow:inset 0 0 0 1px rgba(246,203,70,.5)}
 .splash-s4 .txt{font-size:1.02rem;font-weight:600}
 .splash-s4 .txt b{font-family:var(--font-display);letter-spacing:.5px;font-weight:400}
 .splash-s4 .go{background:#0b0b0d;color:#fff;font-weight:800;padding:9px 20px;border-radius:999px;font-size:.85rem;white-space:nowrap}
@@ -549,7 +544,7 @@ tbody tr:hover { background: var(--bg-3); }
 .splash-tile img{width:120px;height:120px;filter:drop-shadow(0 8px 20px rgba(227,178,62,.25))}
 .splash-tile h2{font-size:1.7rem;margin:18px 0 6px}
 .splash-tile p{color:var(--muted);font-size:.92rem;min-height:44px;max-width:240px}
-.splash-tile .go{margin-top:14px;background:linear-gradient(90deg,var(--accent-2),#f1cd6e);color:#111;font-weight:800;padding:11px 26px;border-radius:999px;font-size:.9rem}
+.splash-tile .go{margin-top:14px;background:linear-gradient(90deg,var(--accent-2),#fac53a);color:#111;font-weight:800;padding:11px 26px;border-radius:999px;font-size:.9rem}
 .splash-foot{margin-top:34px;color:var(--muted);font-size:.82rem;letter-spacing:1px}
 .splash-foot a{color:var(--muted)}.splash-foot a:hover{color:var(--accent-2)}
 
@@ -565,12 +560,13 @@ body.light-theme{
   --ink:#171922; --muted:#5b6170; --line:#e5e9ef;
   --shadow:0 16px 40px rgba(24,28,48,.10);
   background:
-    radial-gradient(900px 520px at 50% -10%, rgba(255,106,26,.07), transparent 60%),
+    radial-gradient(900px 520px at 50% -10%, rgba(230,165,30,.07), transparent 60%),
     radial-gradient(700px 500px at 100% 115%, rgba(245,179,1,.07), transparent 55%),
     #ffffff;
   color:var(--ink);
 }
 .light-theme .site-header{ background:rgba(255,255,255,.9); border-bottom:1px solid var(--line); }
+.light-theme .brand-logo{ content: url("assets/logo-full-dark.png"); }
 .light-theme .brand-text .name{ color:var(--ink); }
 .light-theme .eyebrow{ color:#b9790c; }
 .light-theme .note strong{ color:#b9790c; }
